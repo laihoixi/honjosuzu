@@ -10,10 +10,11 @@
 		55F837BD209995A600ED91BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F837BC209995A600ED91BA /* AppDelegate.swift */; };
 		55F837BF209995A600ED91BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F837BE209995A600ED91BA /* ViewController.swift */; };
 		55F837C2209995A600ED91BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F837C0209995A600ED91BA /* Main.storyboard */; };
-		55F837C4209995A700ED91BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F837C3209995A700ED91BA /* Assets.xcassets */; };
 		55F837C7209995A700ED91BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F837C5209995A700ED91BA /* LaunchScreen.storyboard */; };
 		55F837D2209995A700ED91BA /* honjosuzuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F837D1209995A700ED91BA /* honjosuzuTests.swift */; };
 		55F837DD209995A700ED91BA /* honjosuzuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F837DC209995A700ED91BA /* honjosuzuUITests.swift */; };
+		55F837EB2099981600ED91BA /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F837EA2099981600ED91BA /* Media.xcassets */; };
+		55F837ED2099993000ED91BA /* honjosuzuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F837EC2099993000ED91BA /* honjosuzuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		55F837BC209995A600ED91BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F837BE209995A600ED91BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55F837C1209995A600ED91BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		55F837C3209995A700ED91BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F837C6209995A700ED91BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F837C8209995A700ED91BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55F837CD209995A700ED91BA /* honjosuzuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = honjosuzuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +47,8 @@
 		55F837D8209995A700ED91BA /* honjosuzuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = honjosuzuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F837DC209995A700ED91BA /* honjosuzuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = honjosuzuUITests.swift; sourceTree = "<group>"; };
 		55F837DE209995A700ED91BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F837EA2099981600ED91BA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		55F837EC2099993000ED91BA /* honjosuzuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = honjosuzuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 				55F837BC209995A600ED91BA /* AppDelegate.swift */,
 				55F837BE209995A600ED91BA /* ViewController.swift */,
 				55F837C0209995A600ED91BA /* Main.storyboard */,
-				55F837C3209995A700ED91BA /* Assets.xcassets */,
+				55F837EC2099993000ED91BA /* honjosuzuViewController.swift */,
 				55F837C5209995A700ED91BA /* LaunchScreen.storyboard */,
+				55F837EA2099981600ED91BA /* Media.xcassets */,
 				55F837C8209995A700ED91BA /* Info.plist */,
 			);
 			path = honjosuzu;
@@ -230,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F837C7209995A700ED91BA /* LaunchScreen.storyboard in Resources */,
-				55F837C4209995A700ED91BA /* Assets.xcassets in Resources */,
+				55F837EB2099981600ED91BA /* Media.xcassets in Resources */,
 				55F837C2209995A600ED91BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F837ED2099993000ED91BA /* honjosuzuViewController.swift in Sources */,
 				55F837BF209995A600ED91BA /* ViewController.swift in Sources */,
 				55F837BD209995A600ED91BA /* AppDelegate.swift in Sources */,
 			);
@@ -429,7 +433,6 @@
 		55F837E2209995A700ED91BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = honjosuzu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -446,7 +449,6 @@
 		55F837E3209995A700ED91BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = honjosuzu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
